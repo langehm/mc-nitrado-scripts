@@ -1,0 +1,5 @@
+SERVER_ADDRESS="example.com"
+USERNAME="un"
+PASSWORD="pw"
+REMOTE_DIRECTORY="./"
+LOCAL_DIRECTORY="server_commands"
