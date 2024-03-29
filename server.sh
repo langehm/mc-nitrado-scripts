@@ -58,10 +58,9 @@ start_server() {
 # Funktion zum Stoppen des Servers
 stop_server() {
     echo "Stopping server..."
-	local command="stop"
 	delete_file "start"
 	delay
-	upload_file "$command"
+	upload_file "stop"
 	exit 0
 }
 
@@ -69,6 +68,7 @@ stop_server() {
 restart_server() {
     echo "Restarting server..."
 	upload_file "restart"
+    # File will be automatically deleted
 	delay
 }
 
