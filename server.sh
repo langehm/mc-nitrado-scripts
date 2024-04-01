@@ -67,9 +67,11 @@ stop_server() {
 # Funktion zum Neustarten des Servers
 restart_server() {
     echo "Restarting server..."
+    delete "start"
+    delete "stop"
+    delay
 	upload_file "restart"
     # File will be automatically deleted
-	delay
 }
 
 # Funtion zum initieren aller Dateien
